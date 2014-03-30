@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX_MESSAGE_LENGTH	log_internal.c	13;"	d	file:
+MH_MAX_EVENTS	server.c	18;"	d	file:
+TIME_STRING_LEN	log_internal.c	19;"	d	file:
+_LOG_H_	log.h	2;"	d
+_LOG_INTERNAL_H_	log_internal.h	2;"	d
+_log	log.h	/^struct _log {$/;"	s
+_log::close	log.h	/^    void  (*close) ();$/;"	m	struct:_log	access:public
+_log::debug	log.h	/^    void (*debug) (const char * format, ...);$/;"	m	struct:_log	access:public
+_log::error	log.h	/^    void (*error) (const char * format, ...);$/;"	m	struct:_log	access:public
+_log::fd	log.h	/^    int fd;$/;"	m	struct:_log	access:public
+_log::filename	log.h	/^    char * filename;$/;"	m	struct:_log	access:public
+_log::info	log.h	/^    void (*info)  (const char * format, ...);$/;"	m	struct:_log	access:public
+_log::internal	log.h	/^    log_internal * internal;$/;"	m	struct:_log	access:public
+_log::open	log.h	/^    int  (*open)  (const char * filename, int flags);$/;"	m	struct:_log	access:public
+_log_internal	log_internal.h	/^struct _log_internal {$/;"	s
+_log_internal::close	log_internal.h	/^    int  (*close) (int fd);$/;"	m	struct:_log_internal	access:public
+_log_internal::debug	log_internal.h	/^    void (*debug) (int fd, const char * format, ...);$/;"	m	struct:_log_internal	access:public
+_log_internal::error	log_internal.h	/^    void (*error) (int fd, const char * format, ...);$/;"	m	struct:_log_internal	access:public
+_log_internal::info	log_internal.h	/^    void (*info)  (int fd, const char * format, ...);$/;"	m	struct:_log_internal	access:public
+_log_internal::open	log_internal.h	/^    int  (*open)  (const char * filename, int flags);$/;"	m	struct:_log_internal	access:public
+close	log.h	/^    void  (*close) ();$/;"	m	struct:_log	access:public
+close	log_internal.h	/^    int  (*close) (int fd);$/;"	m	struct:_log_internal	access:public
+current_time	log_internal.c	/^static char * current_time()$/;"	f	file:
+debug	log.h	/^    void (*debug) (const char * format, ...);$/;"	m	struct:_log	access:public
+debug	log_internal.h	/^    void (*debug) (int fd, const char * format, ...);$/;"	m	struct:_log_internal	access:public
+default_log	log_internal.c	/^log_internal * default_log = NULL;$/;"	v
+error	log.h	/^    void (*error) (const char * format, ...);$/;"	m	struct:_log	access:public
+error	log_internal.h	/^    void (*error) (int fd, const char * format, ...);$/;"	m	struct:_log_internal	access:public
+fd	log.h	/^    int fd;$/;"	m	struct:_log	access:public
+file_close	log_internal.c	/^void file_close(int fd)$/;"	f	signature:(int fd)
+file_debug	log_internal.c	/^void file_debug(int fd, const char * format, ...)$/;"	f	signature:(int fd, const char * format, ...)
+file_error	log_internal.c	/^void file_error(int fd, const char * format, ...)$/;"	f	signature:(int fd, const char * format, ...)
+file_info	log_internal.c	/^void file_info(int fd, const char * format, ...)$/;"	f	signature:(int fd, const char * format, ...)
+file_open	log_internal.c	/^int file_open(const char *filename, int flags)$/;"	f	signature:(const char *filename, int flags)
+filename	log.h	/^    char * filename;$/;"	m	struct:_log	access:public
+free_default_log	log_internal.c	/^void free_default_log()$/;"	f
+free_default_log	log_internal.h	/^void free_default_log();$/;"	p	signature:()
+get_default_internal	log_internal.c	/^log_internal * get_default_internal()$/;"	f
+get_default_internal	log_internal.h	/^log_internal * get_default_internal();$/;"	p	signature:()
+get_log	log.c	/^logtool * get_log()$/;"	f
+get_log	log.h	/^logtool * get_log();$/;"	p	signature:()
+info	log.h	/^    void (*info)  (const char * format, ...);$/;"	m	struct:_log	access:public
+info	log_internal.h	/^    void (*info)  (int fd, const char * format, ...);$/;"	m	struct:_log_internal	access:public
+internal	log.h	/^    log_internal * internal;$/;"	m	struct:_log	access:public
+log	log.c	/^static logtool * log = NULL;$/;"	v	file:
+log_close	log.c	/^void log_close()$/;"	f
+log_debug	log.c	/^void log_debug(const char * fmt, ...)$/;"	f	signature:(const char * fmt, ...)
+log_error	log.c	/^void log_error(const char * fmt, ...)$/;"	f	signature:(const char * fmt, ...)
+log_info	log.c	/^void log_info(const char * fmt, ...)$/;"	f	signature:(const char * fmt, ...)
+log_internal	log_internal.h	/^typedef struct _log_internal log_internal;$/;"	t	typeref:struct:_log_internal
+log_open	log.c	/^static int log_open(const char * filename, int flags)$/;"	f	file:	signature:(const char * filename, int flags)
+log_ref_cnt	log.c	/^unsigned int log_ref_cnt = 0;$/;"	v
+logtool	log.h	/^typedef struct _log logtool;$/;"	t	typeref:struct:_log
+main	server.c	/^int main(int argc, char ** argv)$/;"	f	signature:(int argc, char ** argv)
+msg	log_internal.c	/^static char msg[MAX_MESSAGE_LENGTH] = {0};$/;"	v	file:
+open	log.h	/^    int  (*open)  (const char * filename, int flags);$/;"	m	struct:_log	access:public
+open	log_internal.h	/^    int  (*open)  (const char * filename, int flags);$/;"	m	struct:_log_internal	access:public
